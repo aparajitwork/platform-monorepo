@@ -23,7 +23,7 @@ export const ThemeProvider = ({ children, defaultTheme = "light" }: ThemeProvide
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>
-      <div data-theme={theme} className="contents">
+      <div data-theme={theme}>
         {children}
       </div>
     </ThemeContext.Provider>

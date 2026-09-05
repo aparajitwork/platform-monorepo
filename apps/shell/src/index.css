@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "@platform/shared-ui/theme.css";
+
+@source "../../../node_modules/@platform/shared-ui/dist";
+@source "../../../node_modules/@platform/inventory/dist";
+@source "../../../node_modules/@platform/analytics/dist";
