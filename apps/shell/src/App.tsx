@@ -3,12 +3,11 @@ import { InventoryDashboard } from '@platform/inventory';
 import { ThemeProvider, ThemeToggleButton, useTheme } from '@platform/shared-ui';
 import { lazy, Suspense } from 'react'
 import OrdersFallback from './OrdersFallback';
+import { MOCK_API_URL } from './config';
 
 const OrdersDashboard = lazy(() => import("orders/OrdersDashboard").then((module) => ({
   default: module.OrdersDashboard
 })));
-
-const MOCK_API_URL = import.meta.env.VITE_MOCK_API_URL;
 
 const Dashboard = () => {
   const { theme } = useTheme();
