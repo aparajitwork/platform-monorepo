@@ -8,12 +8,13 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js"
     },
     "./theme.css": "./src/theme.css"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
     "test": "jest",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit -p tsconfig.json && tsc -p tsconfig.typecheck.json"

@@ -28,6 +28,7 @@ export const fetchInventoryItems = async (apiBaseUrl: string): Promise<Inventory
     const data: InventoryItemsResponse = await response.json();
     return data.items;
   } catch (err: unknown) {
-    throw new Error(`Failed to load inventory: ${err.message}`, { cause: err })
+    const message = err instanceof Error ? err.message : String(err);
+    throw new Error(`Failed to load inventory: ${message}`, { cause: err })
   }
 }
