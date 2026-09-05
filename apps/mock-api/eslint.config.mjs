@@ -11,6 +11,9 @@ export default tseslint.config(
       ecmaVersion: 2022,
       sourceType: "module",
       globals: globals.node,
+      parserOptions: {
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
     rules: {
       "no-undef": "off",
