@@ -4,7 +4,7 @@ type WareHouseType = "BLR-1" | "DEL-2" | "MUM-3";
 
 export type InventoryItem = {
   id: string;
-  sky: string;
+  sku: string;
   name: string;
   category: CategoryType;
   quantity: number;
