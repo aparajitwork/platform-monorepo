@@ -1,6 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Button } from "../Button";
-import React from "react";
 
 test("renders its children and responds to clicks", () => {
   const handleClick = jest.fn();

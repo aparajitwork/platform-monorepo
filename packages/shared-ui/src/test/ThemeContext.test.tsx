@@ -1,6 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { ThemeProvider, useTheme } from "../ThemeContext";
-import React from "react";
 
 function Probe() {
   const { theme, toggleTheme } = useTheme();
