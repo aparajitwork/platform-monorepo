@@ -14,7 +14,7 @@ type ThemeProviderProps = {
   defaultTheme?: Theme
 }
 
-const ThemeProvider = ({ children, defaultTheme = "light" }: ThemeProviderProps) => {
+export const ThemeProvider = ({ children, defaultTheme = "light" }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<Theme>(defaultTheme);
 
   const toggleTheme = () => {
@@ -39,5 +39,3 @@ export const useTheme = (): ThemeContextValue => {
 
   return context;
 }
-
-export default ThemeProvider;
