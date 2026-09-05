@@ -5,9 +5,7 @@ import { lazy, Suspense } from 'react'
 import OrdersFallback from './OrdersFallback';
 import { MOCK_API_URL } from './config';
 
-const OrdersDashboard = lazy(() => import("orders/OrdersDashboard").then((module) => ({
-  default: module.OrdersDashboard
-})));
+const OrdersDashboard = lazy(() => import("orders/OrdersDashboard"));
 
 const Dashboard = () => {
   const { theme } = useTheme();

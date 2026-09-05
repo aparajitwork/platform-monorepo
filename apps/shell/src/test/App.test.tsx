@@ -16,7 +16,8 @@ jest.mock("@platform/analytics", () => ({
 jest.mock(
   "orders/OrdersDashboard",
   () => ({
-    OrdersDashboard: ({ theme }: { theme: string }) => <div>Orders mock ({theme})</div>,
+    __esModule: true,
+    default: ({ theme }: { theme: string }) => <div>Orders mock ({theme})</div>,
   }),
   { virtual: true },
 );
