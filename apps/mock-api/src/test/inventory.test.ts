@@ -1,6 +1,6 @@
 import express from "express";
 import request from "supertest";
-import { inventoryRouter } from "./inventory";
+import { inventoryRouter } from "../routes/inventory";
 
 function buildApp() {
   const app = express();

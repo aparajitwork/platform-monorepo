@@ -1,6 +1,6 @@
 import express from "express";
 import request from "supertest";
-import { analyticsRouter } from "./analytics";
+import { analyticsRouter } from "../routes/analytics";
 
 function buildApp() {
   const app = express();
