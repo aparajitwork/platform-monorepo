@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { AnalyticsData } from "./api/analytics";
 import { Card, ThemeToggleButton, useTheme } from "@platform/shared-ui";
 import { fetchAnalyticsData, type AnalyticsData } from './api/analytics';
 import Stat from './Stat';
