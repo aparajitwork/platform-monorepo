@@ -1,0 +1,25 @@
+:root {
+  --raw-surface: #fff;
+  --raw-ink: #1c231f;
+  --raw-ink-muted: #5c655e;
+  --raw-line: #d8ded9;
+  --raw-accent: #2f5d42;
+  --raw-accent-ink: #fff;
+}
+
+[data-theme="dark"] {
+  --raw-surface: #14181a;
+  --raw-ink: #e7ece8;
+  --raw-ink-muted: #9aa39c;
+  --raw-line: #2a312c;
+  --raw-accent: #6fae87;
+}
+
+@theme {
+  --color-surface: var(--raw-surface);
+  --color-ink: var(--raw-ink);
+  --color-ink-muted: var(--raw-ink-muted);
+  --color-line: var(--raw-line);
+  --color-accent: var(--raw-accent);
+  --color-accent-ink: var(--raw-accent-ink);
+}
