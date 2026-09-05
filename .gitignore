@@ -137,6 +137,11 @@ dist
 !.yarn/sdks
 !.yarn/versions
 
+# Yarn Berry
+.yarn/cache
+.yarn/install-state.gz
+.pnp.*
+
 # Vite files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
