@@ -25,6 +25,9 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
+      - name: Build workspace dependencies
+        run: yarn workspaces foreach --all --topological run build
+
       - name: Lint
         run: yarn workspaces foreach --all run lint
 
@@ -47,6 +50,9 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
+      - name: Build workspace dependencies
+        run: yarn workspaces foreach --all --topological run build
+
       - name: Typecheck
         run: yarn workspaces foreach --all run typecheck
 
@@ -68,6 +74,9 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --immutable
+      
+      - name: Build workspace dependencies
+        run: yarn workspaces foreach --all --topological run build
 
       - name: Test
         run: yarn workspaces foreach --all run test
@@ -92,4 +101,4 @@ jobs:
         run: yarn install --immutable
 
       - name: Build
-        run: yarn workspaces foreach --all run build
+        run: yarn workspaces foreach --all --topological run build
