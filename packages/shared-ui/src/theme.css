@@ -5,6 +5,7 @@
   --raw-line: #d8ded9;
   --raw-accent: #2f5d42;
   --raw-accent-ink: #fff;
+  --raw-danger: #b3403a;
 }
 
 [data-theme="dark"] {
@@ -13,6 +14,7 @@
   --raw-ink-muted: #9aa39c;
   --raw-line: #2a312c;
   --raw-accent: #6fae87;
+  --raw-danger: #e0837e;
 }
 
 @theme {
@@ -22,4 +24,5 @@
   --color-line: var(--raw-line);
   --color-accent: var(--raw-accent);
   --color-accent-ink: var(--raw-accent-ink);
+  --color-danger: var(--raw-danger);
 }
